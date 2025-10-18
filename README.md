@@ -1,6 +1,6 @@
 # Locksidian
 <p align="center">
-<img alt="Locksidian lockscreen" src="https://github.com/user-attachments/assets/74bed28f-c472-4080-9344-fcd2b339f47e" />
+<img alt="Locksidian lockscreen" src="https://github.com/user-attachments/assets/24ad6462-21e5-4b94-b4b5-2c3e9be2df16" />
 </p>
 
 <p align="center">
