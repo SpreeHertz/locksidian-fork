@@ -5,9 +5,9 @@
 
 import * as obsidian from 'obsidian';
 import { zxcvbn, zxcvbnOptions } from '@zxcvbn-ts/core';
-import { dictionary } from '@zxcvbn-ts/language-en';
+import { dictionary, translations } from '@zxcvbn-ts/language-en';
 
-zxcvbnOptions.setOptions({ dictionary });
+zxcvbnOptions.setOptions({ dictionary, translations });
 
 // ============================================================================
 // CONSTANTS

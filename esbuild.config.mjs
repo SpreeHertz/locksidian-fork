@@ -3,7 +3,7 @@ import process from "process";
 
 const prod = process.argv[2] === "production";
 
-esbuild.build({
+const ctx = await esbuild.context({
   entryPoints: ["index.js"],
   bundle: true,
   external: ["obsidian"],
@@ -14,4 +14,12 @@ esbuild.build({
   treeShaking: true,
   outfile: "main.js",
   minify: prod,
-}).catch(() => process.exit(1));
+});
+
+if (prod) {
+  await ctx.rebuild();
+  ctx.dispose();
+} else {
+  await ctx.watch();
+  console.log("watching...");
+}
